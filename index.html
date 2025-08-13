@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jeongman Park" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glass Bridge Memory Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Glass Bridge Memory Game</h1>
+    <div id="hud" class="hud">
+      <div>Level: <span id="levelNum">1</span> / 10</div>
+      <div>Length: <span id="seqLen">10</span></div>
+      <div>Step: <span id="stepNum">0</span></div>
+    </div>
+    <p>Memorize the path! Then enter L or R for each step.</p>
+    <div id="pathDisplay" class="path"></div>
+    <input type="text" id="guessInput" placeholder="L or R" maxlength="1" />
+    <button id="submitGuess">Submit</button>
+    <div id="message"></div>
+    <div id="score"></div>
+    <div id="visualFeedback">
+      <div id="bridgeChoice">
+        <img class="bridge-img left" src="images/bridge-left.png" alt="Left Bridge" />
+        <img class="bridge-img right" src="images/bridge-right.png" alt="Right Bridge" />
+      </div>
+      <img id="feedbackImage" src="images/bridge-neutral.png" alt="Bridge Visual" />
+    </div>
+    <button id="nextLevelBtn">Next Level</button>
+    <button id="restartBtn">Play Again</button>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+</html>

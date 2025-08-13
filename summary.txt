@@ -1,0 +1,22 @@
+Glass Bridge Memory Game — Game Description
+
+Game Description
+- Inspired by the “Glass Bridge” scene in Netflix’s Squid Game.
+- The game shows a path of L/R steps for 7 seconds, then it turns into dots.
+- Clear a level to unlock the next one. If you miss a step, you fall and can try again.
+
+How to Play
+1) Watch the path (shows for 7 seconds).
+2) Type L or R, one step at a time (press Enter or click Submit).
+3) Reach the end of the path to finish the level.
+
+Levels
+- 10 levels total.
+- Level 1 has 10 steps; each level adds +1 step (Level 10 = 20 steps).
+
+How the Code Works
+- The game builds a random L/R path and stores it in an array.
+- The path shows briefly, then turns into dots.
+- Each letter you type is checked: right = move ahead; wrong = you fall.
+- The top bar shows your level, path length, and current step. Buttons let you go to the next level or play again.
+- Pictures change for left/right/safe/fall.
